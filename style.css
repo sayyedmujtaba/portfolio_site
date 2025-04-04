@@ -37,3 +37,41 @@ p {
     font-weight: 300;
     letter-spacing: 0.05rem;
 }
+
+.section-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    }
+
+.section-title span{
+    color: crimson;
+}
+
+.cta{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 30px;
+    transition: 0.3s ease background-color, color;
+    color: black;
+}
+
+.cta:hover{
+    background-color: crimson;
+    color: white;
+}
+
+.brand h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    /* color: white; */
+}
