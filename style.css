@@ -140,7 +140,32 @@ p {
     }
 }
 
-#header .hamburger .bar{
+#header .hamburger {
+    border: 3px solid white;
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    cursor: pointer;
+    transform: scale(0.8);
+}
+
+#header .hamburger:after {
+    content: "";
+    border: 3px solid white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    animation: hamburger-puls 1s ease infinite;
+}
+
+#header .hamburger .bar {
     background-color: white;
     height: 2px;
     width: 30px;
@@ -149,7 +174,7 @@ p {
 }
 
 #header .hamburger .bar::before,
-#header .hamburger .bar::after{
+#header .hamburger .bar::after {
     content: "";
     background-color: white;
     height: 100%;
@@ -159,14 +184,18 @@ p {
     transition: 0.3s ease top, bottom;
 }
 
-#header .hamburger .bar::after{
+#header .hamburger .bar::after {
     top: 8px;
 }
 
-#header .hamburger .bar::before{
+#header .hamburger .bar::before {
     bottom: 8px;
 }
 
-#header .hamburger.active .bar::after{
-    top: 0;
+#header .hamburger.active .bar::before {
+    bottom: 0; 
+}
+
+#header .hamburger.active .bar::after {
+    top: 0; 
 }
