@@ -80,7 +80,7 @@ p {
 .brand h1{
     font-size: 3rem;
     text-transform: uppercase;
-    /* color: white; */
+    color: white;
 }
 
 .brand h1 span{
@@ -371,5 +371,32 @@ p {
     }
     100% {
         width: 0; /* Shrinks to reveal the text */
+    }
+}
+
+#hero h1 span:nth-child(1) span {
+    animation-delay: 0.5s;
+}
+
+#hero h1 span:nth-child(2) span {
+    animation-delay: 1.5s;
+}
+
+#hero h1 span:nth-child(3) span {
+    animation-delay: 2.5s;
+}
+
+@media screen and (max-width: 768px) {
+    .cta {
+        font-size: 2.5rem;
+        padding: 20px 60px;
+    }
+
+    h1.section-title{
+        font-size: 6rem;
+    }
+
+    #hero h1{
+        font-size: 7rem;
     }
 }
