@@ -10,8 +10,8 @@ hamburger.addEventListener("click", () => {
 
 menuItem.forEach((item) => {
     item.addEventListener("click", () => {
-        hamburger.classList.remove("active");
-        mobileMenu.classList.remove("active");
+        hamburger.classList.toggle("active");
+        mobileMenu.classList.toggle("active");
     });
 });
 
