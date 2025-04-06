@@ -628,6 +628,12 @@ p {
     border: 10px solid white;
 }
 
+#about .col-left .about-img img {
+    width: 100%; /* Ensure image fills container */
+    height: 100%; /* Ensure image fills container */
+    object-fit: cover; /* Maintain aspect ratio while filling container */
+}
+
 #about .col-left .about-img::after{
     content: "";
     position: absolute;
